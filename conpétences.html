@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sibeunou Yahovi — Cybersecurity Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+     <!-- ═══════════════════════════════════════
+       CANVAS — Matrix Rain Background
+  ═══════════════════════════════════════ -->
+  <canvas id="matrix-canvas"></canvas>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-bracket">[</span>
+        <span class="logo-name">AM</span>
+        <span class="logo-bracket">]</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link" data-text="Accueil">Accueil</a></li>
+        <li><a href="apropos.html" class="nav-link" data-text="À propos">À propos</a></li>
+        <li><a href="conpétences.html" class="nav-link" data-text="Compétences">Compétences</a></li>
+        <li><a href="projets.html" class="nav-link" data-text="Projets">Projets</a></li>
+        <li><a href="certification.html" class="nav-link" data-text="Certifications">Certifications</a></li>
+        <li><a href="contact.html" class="nav-link" data-text="Contact">Contact</a></li>
+      </ul>
+      <div class="nav-status">
+        <span class="status-dot"></span>
+        <span class="status-text">SECURE</span>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+   <!-- ═══════════════════════════════════════
+       SKILLS SECTION
+  ═══════════════════════════════════════ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">WELCOME</span>
+        <h2 class="section-title">Compé<span class="accent">tences</span></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Network Security -->
+        <div class="skill-card reveal">
+          <div class="skill-glow"></div>
+          <div class="skill-icon-wrap">
+            <svg class="skill-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2"/>
+              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 3"/>
+              <line x1="4" y1="24" x2="44" y2="24" stroke="currentColor" stroke-width="1.2"/>
+              <line x1="24" y1="4" x2="24" y2="44" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Network Security</h3>
+          <p class="skill-desc">Analyse de trafic, IDS/IPS, firewalls, VPN & segmentation réseau.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div>
+          <span class="skill-pct">88%</span>
+        </div>
+
+        <!-- Ethical Hacking -->
+        <div class="skill-card reveal">
+          <div class="skill-glow"></div>
+          <div class="skill-icon-wrap">
+            <svg class="skill-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4 L44 14 L44 28 C44 37 34 44 24 46 C14 44 4 37 4 28 L4 14 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M16 24 L22 30 L32 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Ethical Hacking</h3>
+          <p class="skill-desc">Pentesting, exploitation de vulnérabilités, rapports de sécurité.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="82%"></div></div>
+          <span class="skill-pct">82%</span>
+        </div>
+
+        <!-- Cryptography -->
+        <div class="skill-card reveal">
+          <div class="skill-glow"></div>
+          <div class="skill-icon-wrap">
+            <svg class="skill-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="22" width="28" height="20" rx="3" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 22 V16 C16 9.4 32 9.4 32 16 V22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="24" cy="32" r="3" fill="currentColor"/>
+              <line x1="24" y1="35" x2="24" y2="39" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Cryptography</h3>
+          <p class="skill-desc">AES, RSA, ECC, protocoles TLS/SSL, gestion des clés.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="78%"></div></div>
+          <span class="skill-pct">78%</span>
+        </div>
+
+        <!-- Linux -->
+        <div class="skill-card reveal">
+          <div class="skill-glow"></div>
+          <div class="skill-icon-wrap">
+            <svg class="skill-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="8" width="36" height="24" rx="3" stroke="currentColor" stroke-width="2"/>
+              <line x1="16" y1="40" x2="32" y2="40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="24" y1="32" x2="24" y2="40" stroke="currentColor" stroke-width="2"/>
+              <path d="M14 20 L18 16 L22 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="18" y1="16" x2="18" y2="24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M26 24 V18 L30 22 L34 18 V24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Linux</h3>
+          <p class="skill-desc">Kali Linux, administration système, scripting Bash & automatisation.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="92%"></div></div>
+          <span class="skill-pct">92%</span>
+        </div>
+
+        <!-- Python -->
+        <div class="skill-card reveal">
+          <div class="skill-glow"></div>
+          <div class="skill-icon-wrap">
+            <svg class="skill-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 8 H28 C34 8 36 10 36 16 V22 C36 28 34 30 28 30 H20 C14 30 12 32 12 36 V40 C12 44 14 44 20 44" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+              <path d="M28 40 H20 C14 40 12 38 12 32 V26 C12 20 14 18 20 18 H28 C34 18 36 16 36 12 V8 C36 4 34 4 28 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+              <circle cx="22" cy="24" r="2" fill="currentColor"/>
+              <circle cx="26" cy="24" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Python</h3>
+          <p class="skill-desc">Scripting offensif, outils d'automatisation, analyse de données réseau.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+          <span class="skill-pct">85%</span>
+        </div>
+
+        <!-- Web Security -->
+        <div class="skill-card reveal">
+          <div class="skill-glow"></div>
+          <div class="skill-icon-wrap">
+            <svg class="skill-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" stroke-width="2"/>
+              <line x1="6" y1="18" x2="42" y2="18" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="14" r="2" fill="currentColor"/>
+              <circle cx="18" cy="14" r="2" fill="currentColor"/>
+              <path d="M14 28 L20 34 L34 22" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Web Security</h3>
+          <p class="skill-desc">OWASP Top 10, XSS, SQLi, CSRF, tests d'intrusion web.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+          <span class="skill-pct">80%</span>
+        </div>
+
+        <!-- Digital Forensics -->
+        <div class="skill-card reveal">
+          <div class="skill-glow"></div>
+          <div class="skill-icon-wrap">
+            <svg class="skill-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="22" cy="22" r="12" stroke="currentColor" stroke-width="2"/>
+              <line x1="31" y1="31" x2="42" y2="42" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="18" y1="22" x2="26" y2="22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <line x1="22" y1="18" x2="22" y2="26" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Digital Forensics</h3>
+          <p class="skill-desc">Analyse d'images disque, récupération de données, investigation numérique.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="72%"></div></div>
+          <span class="skill-pct">72%</span>
+        </div>
+
+        <!-- OSINT -->
+        <div class="skill-card reveal">
+          <div class="skill-glow"></div>
+          <div class="skill-icon-wrap">
+            <svg class="skill-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
+              <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="6" y1="24" x2="16" y2="24" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="32" y1="24" x2="42" y2="24" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="24" y1="6" x2="24" y2="16" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="24" y1="32" x2="24" y2="42" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">OSINT</h3>
+          <p class="skill-desc">Reconnaissance passive, collecte d'informations, profilage d'entités.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="76%"></div></div>
+          <span class="skill-pct">76%</span>
+        </div>
+         <!-- Installation Caméras CCTV -->
+        <div class="skill-card reveal">
+         <div class="skill-glow"></div>
+         <div class="skill-icon-wrap">
+           <svg class="skill-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="16" width="24" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+            <path d="M30 20 L42 14 L42 34 L30 28 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <circle cx="14" cy="24" r="4" stroke="currentColor" stroke-width="2"/>
+            <path d="M6 12 L10 16 M6 12 L4 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+           </svg>
+         </div>
+         <h3 class="skill-name">Installation CCTV</h3>
+         <p class="skill-desc">Déploiement et configuration de caméras de vidéosurveillance.</p>
+         <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+         <span class="skill-pct">85%</span>
+        </div>
+
+          <!-- Contrôle d'accès & Serrure intelligente -->
+        <div class="skill-card reveal">
+         <div class="skill-glow"></div>
+         <div class="skill-icon-wrap">
+           <svg class="skill-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <rect x="12" y="20" width="24" height="20" rx="3" stroke="currentColor" stroke-width="2"/>
+             <path d="M18 20 L18 13 a6 6 0 0112 0 L30 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+             <circle cx="24" cy="28" r="2.5" stroke="currentColor" stroke-width="2"/>
+             <path d="M24 30.5 L24 34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+           </svg>
+         </div>
+         <h3 class="skill-name">Contrôle d'accès & Serrure intelligente</h3>
+         <p class="skill-desc">Badges, biométrie, verrous connectés et gestion des accès.</p>
+         <div class="skill-bar"><div class="skill-fill" data-width="78%"></div></div>
+         <span class="skill-pct">78%</span>
+        </div>
+
+          <!-- Système d'alarme anti-intrusion -->
+        <div class="skill-card reveal">
+          <div class="skill-glow"></div>
+          <div class="skill-icon-wrap">
+            <svg class="skill-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6 C15 6 8 13 8 22 L8 30 L6 34 L42 34 L40 30 L40 22 C40 13 33 6 24 6 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M19 34 a5 5 0 0010 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M24 2 L24 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="24" cy="18" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Système d'alarme anti-intrusion</h3>
+          <p class="skill-desc">Détection de mouvement, capteurs périmétriques, alertes en temps réel.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+          <span class="skill-pct">80%</span>
+        </div>
+
+          <!-- GPS Tracking -->
+        <div class="skill-card reveal">
+         <div class="skill-glow"></div>
+         <div class="skill-icon-wrap">
+           <svg class="skill-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 4 C16 4 10 10 10 18 C10 28 24 44 24 44 C24 44 38 28 38 18 C38 10 32 4 24 4 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <circle cx="24" cy="18" r="6" stroke="currentColor" stroke-width="2"/>
+            <circle cx="24" cy="18" r="1.5" fill="currentColor"/>
+           </svg>
+         </div>
+         <h3 class="skill-name">GPS Tracking</h3>
+         <p class="skill-desc">Géolocalisation en temps réel et suivi de flotte/véhicules.</p>
+         <div class="skill-bar"><div class="skill-fill" data-width="72%"></div></div>
+         <span class="skill-pct">72%</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+ 
+    <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="footer-grid-overlay"></div>
+    <div class="container footer-container">
+
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <span class="logo-bracket">[</span>
+          <span class="logo-name">AM</span>
+          <span class="logo-bracket">]</span>
+        </div>
+        <p class="footer-tagline">Securing the digital world, one vulnerability at a time.</p>
+      </div>
+
+      <div class="footer-links-wrap">
+        <div class="footer-nav">
+          <span class="footer-nav-title">Navigation</span>
+          <a href="index.html">Accueil</a>
+          <a href="apropos.html">À propos</a>
+          <a href="conpétences.html">Compétences</a>
+          <a href="projets.html">Projets</a>
+          <a href="certification.html">Certifications</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-social-wrap">
+          <span class="footer-nav-title">Réseaux</span>
+          <div class="social-links">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/yahovi-sibeunou-a6524a35a/" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2" fill="currentColor"/></svg>
+              LinkedIn
+            </a>
+            <!-- GitHub -->
+            <a href="https://github.com/yahovisibeunou" class="social-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              GitHub
+            </a>
+            <!-- Twitter / X -->
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              Twitter
+            </a>
+            <!--whatsap-->
+            <a href="#" class="social-link" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l4.9-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1112 20zm4.4-5.6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.1-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5s-.5-1.2-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2 1 2.4c.1.2 1.6 2.5 4 3.4.6.2 1 .4 1.3.5.6.2 1.1.1 1.5-.1.5-.2 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3z"/></svg>
+              WhatsApp
+            </a>
+            <!--Facebook-->
+            <a href="https://www.facebook.com/yahovi.sibeunou" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H8v3h3v7h3v-7h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg>
+              Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026. Sibeunou Nanseu Yahovi Tous droits réservés.</span>
+      <span class="footer-pgp">PGP: 4A2F 8B91 C3DE 7F56</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+    
+</body>
+</html>
